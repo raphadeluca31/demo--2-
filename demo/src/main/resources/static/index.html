@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button onclick="showForm('cidade')" class="active">Cidade</button>
+            <button onclick="showForm('pais')">País</button>
+            <button onclick="showForm('carro')">Carro</button>
+        </div>
+        <div id="form-container">
+            <!-- Formulário será inserido aqui pelo JavaScript -->
+        </div>
+        <button id="show-list-button" onclick="showList()" style="margin-top: 20px;">Exibir Lista</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="list-container">
+                <!-- Lista de itens adicionados será inserida aqui pelo JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
